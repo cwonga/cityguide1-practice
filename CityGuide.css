@@ -1,0 +1,135 @@
+* {
+	box-sizing: border-box;
+}
+
+#header {
+	background-color: #3acec2;
+	padding: 5px;
+	text-align: center;
+
+
+}
+
+#header a{
+	text-decoration: none;
+	color: #3acec2;
+}
+
+#footer {
+	background-color: lightgray;
+	padding: 10px;
+	text-align: center;
+}
+
+.content {
+	padding-left: 1em;
+	padding-right: 1em;
+	border: 1px solid red;
+
+}
+
+.header-content {
+	padding-left: 1em;
+	padding-right: 1em;
+	background-color: yellow;
+}
+
+#name {
+	color: red;
+}
+
+#name, #main-nav li {
+	text-align: center;
+	background: #fff;
+	margin-top: 6px;
+	margin-bottom: 6px;
+}
+
+#main-nav {
+	text-transform: uppercase;
+}
+
+#main-nav a:hover {
+	color: #093a58;
+}
+
+#name a,
+#main-nav a {
+	padding: 10px 15px;
+	display: block;
+}
+
+/* =========================
+Media Queries
+============================ */
+
+@media (min-width: 769px) {
+	.content {
+		width: 70%;
+		max-width: 1000px;
+		margin: 0 auto;
+	}
+
+	.header-content {
+	width: 70%;
+	max-width: 1000px;
+	margin: 0 auto;
+	}
+
+	#wrap {
+		min-height: calc(100vh - 90px);
+	}
+
+	#name,
+	#main-nav li{
+		display: inline-block;
+	}
+
+	#name {
+		width: 350px;
+		margin-top: 10px;
+		float: left;
+	}
+
+	#main-nav li{
+		margin-right: -4px;
+
+	}
+
+/*---INLINE COLUMNS
+	#primary-col,
+	#secondary-col {
+		display: inline-block;
+		width: 50%;
+		margin-right: -4px;
+		vertical-align: top;
+		background-color: lightgray;
+		padding-left: 1em;
+		padding-right: 1em;
+	}
+
+--------*/
+
+	#primary-col {
+		width: 40%;
+		float: left;
+		padding-right: 5px;
+	}
+
+	#secondary-col {
+		width: 60%;
+		float: left;
+	}
+
+	#treats {
+		width: 300px;
+		float: left;
+		margin: 10px 15px 10px 0px;
+	}
+
+	.clearfix::after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
